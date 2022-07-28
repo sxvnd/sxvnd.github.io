@@ -162,13 +162,14 @@ img {
 }
 
 /* Footer */
-{
-    padding-top: 16rem;
-    padding-bottom: 16rem;
-    padding-left: 16rem;
-    padding-right: 16rem;
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     border-top-width: 2rem;
     border-top-style: solid;
     border-top-color: #333;
+    margin: auto;
 }
 
