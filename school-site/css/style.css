@@ -78,43 +78,180 @@ header, footer {
 
 
 /* Imported Typfaces */
-
-
-
-
-
+@font-face {
+    font-family: josefinslab;
+    src: url(../fonts/josefinslab-regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/montserrat-regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
 /* Typography Styles */
+html {
+    max-width:1200px;
+    margin:auto;
+    padding:1rem 2rem;
+}
 
+h1 {
+    font-family: josefinslab, sans-serif;
+    font-size: 3.75rem;
+    color: ;
+    text-shadow: ;
+    text-align: center;
+    text-transform: ;
+    letter-spacing: 0.125rem;
+    margin: 1.125rem;
+}
 
+h2 {
+    font-family: josefinslab, sans-serif;
+    font-size: 1.5rem;
+    color: ;
+    text-shadow: ;
+    text-align: ;
+    text-transform: ;
+    letter-spacing: 0.125rem;
+    margin: ;
+}
 
+h2 + p {}
 
+p {
+    font-size: .75rem;
+    color: ;
+    text-shadow: ;
+    text-align: ;
+    text-transform: ;
+    text-indent: 1.5rem;
+    letter-spacing: 0.031rem;
+    word-spacing: 0.125rem;
+    margin: ;
+}
 
+li {
+    font-size: 0.75rem;
+    color: ;
+    text-shadow: ;
+    text-align: ;
+    text-transform: ;
+    text-indent: ;
+    letter-spacing: 0.031rem;
+    word-spacing: 0.125rem;
+    margin: ;
+}
 
+figcaption {
+    font-size: 0.75rem;
+    color: ;
+    text-shadow: ;
+    text-align: ;
+    text-transform: ;
+    text-indent: ;
+    letter-spacing: ;
+    word-spacing: ;
+    margin: bottom;
+}
 /* Link Styling */
+a {
+    color: ;
+    outline: none;
+    text-decoration: ;
+    padding: ;
+}
 
+a:link {
+    color: #33658A;
+    outline: ;
+    text-decoration: ;
+    padding: ;
+}
 
+a:visited {
+    color: #33658A;
+    outline: ;
+    text-decoration: ;
+    padding: ;
+}
 
+a:focus {
+    color: ;
+    outline: ;
+    text-decoration: none;
+    padding: ;
+}
 
+a:hover {
+    color: ;
+    outline: ;
+    text-decoration: none;
+    padding: ;
+}
 
-
+a:active {}
 /* List Styling */
+ul {
+    list-style-type: square;
+    margin: 1rem 0rem 1rem 0rem;
+}
 
+ol {
+    list-style-type: lower-latin;
+    margin: 1rem 0rem 1rem 0rem;
+}
 
-
-
-
-
+.long-list a:hover {
+    text-transform: uppercase;
+}
 /* Navigation Menu */
+nav {
+    padding-left: 0rem;
+    margin-top: .25rem;
+}
 
+nav a {
+    display: inline-block;
+    width: 100%;
+    border: 0.125rem solid #33658A;
+    line-height: 3;
+    font-size: 1.125rem;
+    text-align: center;
+    color: #33658A;
+    background-color: ;
+    outline: ;
+    text-decoration: none;
+    padding: .125rem .125rem .5rem .125rem;
+    margin: .25rem .25rem .25rem 0rem;
+}
 
+nav a:focus {
+    color: #FFF;
+    background-color: #33658A; 
+    outline: ;
+    text-decoration: ;
+    padding: ;
+}
 
+nav a:hover {
+    color: #FFF;
+    background-color: #33658A;
+    outline: ;
+    text-decoration: ;
+    padding: ;
+}
 
-
-
+nav a:active {
+    color: #FFF;
+    background-color: #000;
+    outline: ;
+    text-decoration: ;
+    padding: ;
+}
 /* Footer Styles */
-
-
-
-
-
-
+footer {
+    text-align: center;
+}
