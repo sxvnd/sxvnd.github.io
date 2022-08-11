@@ -1,0 +1,228 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+main{
+    padding: 1rem;
+}
+.highlight {
+color: blueviolet;
+border-radius: 15px 5px 15px 5px;
+background: red;
+}
+/* ------ Text ------ */
+p, li {                 
+  font-size: 0.75rem;
+letter-spacing: 0.031rem;
+word-spacing: 0.125rem;
+}
+h1{
+    text-align: center;
+    transform: rotate(355deg);  
+    padding-left: 0;
+    padding-right: 0;  
+}
+h2 {
+    font-size:2rem;
+    font-weight:100;
+    font-family:'Lato', sans-serif;  
+}
+h3{
+    margin-top: 0;
+    padding-top: 0;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;      
+} 
+footer {
+    clear:both;
+    overflow:auto;
+    margin:3% 2%;
+    border-top: 1px solid #7F00FF;
+}
+footer a {
+    font-size:.75rem;
+    color:darkblue;
+}
+.left{
+    float: left;
+}
+.copyright {
+    font-size:.75rem;
+    text-align:right;
+}
+/* ------ Navigation ------ */
+nav{                    
+padding-top: 1rem;
+height: 5rem;
+}
+nav li{
+display: inline;
+margin-left: 0;
+margin-right: 1.5rem;
+font-size: 1.5rem;
+padding-right: 2.5rem;
+} 
+nav li a{
+color: royalblue;
+text-align: left;
+padding: 30px 16px;
+text-decoration: none;
+}
+nav ul {
+list-style-type: none;
+overflow: hidden;
+background-color: #white;
+border-style: solid;
+border-color: #7F00FF;
+padding-bottom: 1rem;
+padding-top: 1rem;
+padding-left: 0;
+border-right-color: transparent;
+border-left-color: transparent;
+}
+li a:hover {
+ 
+    color: black;
+}                                   
+/* ------ Fonts ------ */
+                                
+    @font-face {
+    font-family:Josefinslab;
+    src: url(../fonts/josefinslab-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+    @font-face {
+    font-family:Montserrat;
+    src: url(../fonts/montserrat-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+
+/* ------ Sections ------ */
+section{
+margin: 1rem;
+
+}
+figure{
+    margin: 0;
+}
+figure img {
+  width: 100%;
+  margin:0;  
+
+}
+article{
+    max-width: 70%;
+    float: left;
+    padding-right: 1rem ;
+     border-right: 1px solid #7F00FF;
+     padding-bottom: 7rem;
+}
+.main-section{
+    max-width: 100%
+    display: flex;
+    vertical-align: center;
+
+}
+.subsection{
+max-width: 100%;
+display: inline-block;
+}
+.figures{
+padding: 1rem;
+ float: left;
+  width: 31%;
+  padding: 0.5rem;
+}
+.article-image{
+width: 40%;
+float: left;
+padding-right: 1rem;
+}
+aside{
+    width: 25%;
+    float: right;
+
+}
+aside img{
+    width: 60%;
+    background-size: cover;
+}
+aside p{
+    border-bottom: 1px solid #7F00FF;
+    padding-bottom: 1rem;
+    font-size: 0.65rem;
+}
+figcaption{
+    margin-top:0 ;
+    padding-top: 1rem;
+    opacity: 50%;
+    background-color: lightgoldenrodyellow;
+}
+.expand{
+    text-decoration: none;
+}
+.button{
+display: inline-block;
+outline: 0;
+border: none;
+cursor: pointer;
+font-weight: 600;
+border-radius: 8px;
+font-size: 13px;
+height: 60px;
+background-color: #9147ff;
+color: white;
+padding: 0 20px;
+}
+.button:hover {
+background-color: #772ce8;
+}
+
